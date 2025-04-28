@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  omikuji-bot:
+    build: .
+    container_name: omikuji-bot
+    env_file:
+      - .env
+    restart: unless-stopped
